@@ -1,0 +1,183 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000; /* Black background */
+    color: #FFD700; /* Golden yellow for text */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px;
+    text-shadow: 3px 3px #FFD700, 6px 6px #333; /* Yellow and subtle black shadow */
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: bounce 2s infinite alternate;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5); /* Yellow shadow */
+    animation: slideUp 1s ease-in-out;
+    background: #111; /* Darker black for table */
+    border: 2px solid #FFD700; /* Yellow border */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+table th, table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border: none;
+    color: #FFD700; /* Yellow text */
+    text-shadow: 1px 1px 2px #000; /* Subtle black shadow */
+}
+
+table th {
+    background-color: #FFD700; /* Vibrant yellow for headers */
+    color: #000; /* Black text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table tr:nth-child(even) {
+    background-color: #333; /* Slightly lighter black */
+}
+
+table tr:hover {
+    background: #FFD700; /* Yellow hover */
+    color: #000; /* Black text */
+    transform: scale(1.03); /* Pop-out hover effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Styles */
+.btn, .btn-edit, .btn-delete {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; /* Black text */
+    background: #FFD700; /* Yellow background */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover, .btn-edit:hover, .btn-delete:hover {
+    background: #000; /* Black hover */
+    color: #FFD700; /* Yellow text */
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+.btn-edit {
+    background: #FFD700;
+}
+
+.btn-delete {
+    background: #FFD700;
+}
+
+/* Form Styles */
+form {
+    width: 60%;
+    margin: 40px auto;
+    background: #111; /* Darker black */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+    animation: slideUp 1s ease-in-out;
+    border: 3px solid #FFD700; /* Yellow border */
+}
+
+form input, form textarea {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #FFD700; /* Yellow border */
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: #222; /* Black input background */
+    outline: none;
+    color: #FFD700; /* Yellow text */
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background: #FFD700; /* Yellow background */
+    color: #000; /* Black text */
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: #000; /* Black hover */
+    color: #FFD700; /* Yellow text */
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    color: #FFD700;
+    text-shadow: 1px 1px #000;
+}
